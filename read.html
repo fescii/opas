@@ -112,23 +112,74 @@
         </div>
         <div class="story-title">
             <div class="section-title">
-                <div class="name">Stories</div>
+                <div class="name">The Essential Meta Tags for Social Media</div>
                 <!-- <span class="iconly-Arrow-Right-2 icli"></span> -->
             </div>
             <div class="header">
                 <div class="header-item date">
-                    <i class="iconly-Time-Circle icli"></i>
+                    <!-- <i class="iconly-Time-Circle icli"></i> -->
                     <span class="text">Sunday, August 21, 2022</span>
                 </div>
                 <span class="dot"></span>
                 <div class="header-item views">
-                    <i class="iconly-Show icli"></i>
-                    <span class="text">53k</span>
+                    <!-- <i class="iconly-Show icli"></i> -->
+                    <span class="text">53k views</span>
                 </div>
             </div>
         </div>
         <div class="story-content">
-            content
+            <div id="cover-image">
+                <img id="" src="new/one.jpg" title="article cover" alt="">
+            </div>
+            <div class="article-content">
+                <p>This past summer, I wrote <a href="https://css-tricks.com/essential-meta-tags-social-media/">The Essential Meta Tags for Social Media</a> about how developers can prepare web pages to optimize their appearance when shared on social media. But what about creating the links to let users share these web pages? Facebook, Twitter, and LinkedIn offer numerous ways to do this, some involving button generators and others that require external JavaScript. To avoid all of that, though, you can create your own links to share web pages. And the best part is that it&rsquo;s simple to do yourself. Here&rsquo;s how.</p>
+                <h3 id="h-basic-concept-just-a-link">Basic Concept: Just a Link</h3>
+                <p>When sharing web pages using links, you&rsquo;re essentially submitting a GET request (i.e. clicking a link) to a URL provided by each social media service. Then, by appending a series of name/value pairs (query parameters like ?title=Title) to the end of this URL, you can specify the URL of the web page you want to share and, sometimes, additional information.</p>
+                <p>Now, certain symbols in GET requests known as &ldquo;reserved characters&rdquo;, need to be encoded properly so as not to interfere with normal browser functions. These characters are subject to &ldquo;<a href="https://en.wikipedia.org/wiki/Percent-encoding" rel="noopener">percent-encoding</a>&rdquo; &ndash; that is, they are represented in query parameters with a &ldquo;%&rdquo; followed by a two-digit hex code. These are the reserved characters and their percent-encoded equivalents.</p>
+                <figure class="wp-block-table encoding-table"></figure>
+                <figure class="wp-block-table encoding-table"></figure>
+                <p>Of course, there&rsquo;s no need to memorize these hex codes. There are many resources that provide conversions (<a href="http://www.bing.com/search?q=url%20encoding" rel="noopener">Bing</a> has one built into the search engine) and, as you will soon see, JavaScript can also handle the heavy lifting in this regard. Let&rsquo;s look at a few of the more popular social media services and learn how we can share web pages through them.</p>
+                <h3 id="h-facebook"><a id="aa-facebook" class="aal_anchor" href="https://css-tricks.com/simple-social-sharing-links/#aa-facebook" aria-hidden="true"></a></h3>
+                <h3 id="h-basic-concept-just-a-link">Other Concepts Just a Precise</h3>
+                <p>When sharing web pages using links, you&rsquo;re essentially submitting a GET request (i.e. clicking a link) to a URL provided by each social media service. Then, by appending a series of name/value pairs (query parameters like ?title=Title) to the end of this URL, you can specify the URL of the web page you want to share and, sometimes, additional information.</p>
+                <p>Now, certain symbols in GET requests known as &ldquo;reserved characters&rdquo;, need to be encoded properly so as not to interfere with normal browser functions. These characters are subject to &ldquo;<a href="https://en.wikipedia.org/wiki/Percent-encoding" rel="noopener">percent-encoding</a>&rdquo; &ndash; that is, they are represented in query parameters with a &ldquo;%&rdquo; followed by a two-digit hex code. These are the reserved characters and their percent-encoded equivalents.</p>
+                <figure class="wp-block-table encoding-table"></figure>
+                <figure class="wp-block-table encoding-table"></figure>
+                <p>Of course, there&rsquo;s no need to memorize these hex codes. There are many resources that provide conversions (<a href="http://www.bing.com/search?q=url%20encoding" rel="noopener">Bing</a> has one built into the search engine) and, as you will soon see, JavaScript can also handle the heavy lifting in this regard. Let&rsquo;s look at a few of the more popular social media services and learn how we can share web pages through them.</p>
+                <h3 id="h-facebook"><a id="aa-facebook" class="aal_anchor" href="https://css-tricks.com/simple-social-sharing-links/#aa-facebook" aria-hidden="true"></a></h3>
+                <h3 id="h-facebook">Facebook</h3>
+                <p>Per their <a href="https://developers.facebook.com/docs/sharing/reference/share-dialog" rel="noopener">Developer&rsquo;s Guide</a>, Facebook specifies the following URL to su</p>
+            </div>
+            <div class="article-footer">
+                <div class="article-tags">
+                    <a href="/explore/gone" class="tag">Gone</a>
+                    <a href="/explore/miami" class="tag">Miami</a>
+                    <a href="/explore/tag" class="tag">Tag</a>
+                </div>
+                <div class="author-info">
+                    <h2>About author</h2>
+                    <div class="image-wrapper">
+                        <img src="img/profile.jpg" alt="" srcset="">
+                    </div>
+                    <div class="name">
+                        <span class="name">Fredrick Ochieng</span>
+                        <a href="" class="username">@femar</a>
+                    </div>
+                    <div class="bio">
+                        There are many resources that provide conversions (Bing has one built into the search engine) and, as you will soon see, JavaScript can also handle the heavy lifting in this regard.
+                    </div>
+                    <div class="get-tips">
+                        <p> You can always get Fredrick’s stories via email when subscribe to their page.</p>
+                        <a href="" class="start-link">
+                            <span class="plus">
+                                <i class="top"></i>
+                                <i class="hor"></i>
+                            </span>
+                           <span class="text">Subscribe</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
