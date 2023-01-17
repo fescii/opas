@@ -265,7 +265,7 @@ main.main{
     display: grid;
     grid-template-columns: 2fr 1fr;
     row-gap: 30px;
-    column-gap: 20px;
+    column-gap: 30px;
 }
 main.main>.services{
     grid-column: 1/3;
