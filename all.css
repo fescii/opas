@@ -474,6 +474,7 @@ main.main>.stories-infinite>.story>.content{
 main.main>.stories-infinite>.story>.content>.header{
     grid-column: 1/2;
     grid-row: 1/2;
+    text-decoration: none;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
