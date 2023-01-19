@@ -242,20 +242,21 @@ header.top>.left>.getting-started.getting-started>.icli{
 
 .section-title{
     display: flex;
-    align-items: center;
+    flex-flow: column;
+    /* align-items: center; */
     gap: 0px;
     color: #404040;
 }
 .section-title>.name{
     font-size: 1.8rem;
+    margin: 0%;
     font-weight: bold;
     color: #404040;
 }
-.section-title>.icli{
+.section-title>.text{
     display: inline-block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 8px;
+    font-size: 0.98rem;
+    color: #808080;
 }
 /*Main*/
 main.main{
