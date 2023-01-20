@@ -1,6 +1,6 @@
 @media screen and ( max-width:1000px ){
     body{
-        border: 1px solid #808080;
+        /* border: 1px solid #808080; */
         margin: 0%;
         padding:  0%;
     }
@@ -90,6 +90,9 @@
     }
 }
 @media screen and (max-width:600px ){
+    header.top>.left>.header-links{
+        display: none;
+    }
     main.main>.stories-infinite>.story{
         /* border: 1px solid #808080; */
         border-top: none;
