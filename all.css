@@ -29,7 +29,7 @@ header.top{
     top: 0;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    height: 55px;
+    height: 60px;
     z-index: 5;
     display: flex;
     flex-wrap: nowrap;
@@ -102,7 +102,7 @@ header.top>.left>.getting-started{
     background-color: #08b86f;
     color: white;
     padding: 4px 15px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: start;

@@ -41,32 +41,42 @@
         padding: 10px 10px 10px 10px;
         display: flex;
         flex-flow: column;
-        gap: 30px;
+        gap: 20px;
         align-items: center;
     }
+
     main.main>.services>.content{
         /* border: 1px solid #1e1d1d; */
         gap: 10px;
     }
     main.main>.services>.content>.control:first-of-type{
         /* border: 1px solid #c02727; */
-        margin-left: -20px;
+        margin-left: -30px;
         margin-top: -40px;
     }
     main.main>.services>.content>.control:last-of-type{
         /* border: 1px solid #c02727; */
-        margin-right: -20px;
+        margin-right: -30px;
         margin-top: -40px;
     }
     main.main>.services>.content>.control>span{
         display: inline-block;
-        font-size: 3.5rem;
+        font-size: 3rem;
         cursor: pointer;
         color: #808080;
     }
     main.main>.services>.content>.infos{
         /* border: 1px solid #c02727; */
         gap: 18px;
+    }
+    main.main>.services>.content>.infos>.info>h2.name{
+        /* border: 1px solid #c02727; */
+        font-size: 1.5rem;
+    }
+    main.main>.services>.content>.infos>.info>p.text{
+        /* border: 1px solid #c02727; */
+        font-size: 1.15rem;
+        width: 100%;
     }
     main>.side-content{
         position: unset;
@@ -106,7 +116,7 @@
     main.main>.stories-infinite>.story>.profile{
         position: absolute;
         left: 0%;
-        top: -3px;
+        top: -2px;
         width: 28px;
         height: 28px;
     }
@@ -146,12 +156,24 @@
     }
 }
 @media screen and (max-width:500px){
-    .welcome-wrapper>.text-content>.tag,
-    main.main>.services>.section-title>.name{
+    .welcome-wrapper>.text-content>.tag{
         font-size: 2.5rem;
+    }
+    main.main>.services>.section-title>.name{
+        font-size: 2.3rem;
     }
     .welcome-wrapper>.text-content>.sub-text{
         font-size: 1.35rem;
+    }
+    main>.side-content{
+        /* border: 1px solid #c02727; */
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    main>.side-content>ul.topic-list{
+        /* border: 1px solid #c02727; */
+        margin: 0%;
+        padding: 0%;
     }
     footer.footer{
         padding: 10px;
