@@ -793,13 +793,13 @@
             contentContainer = document.querySelector("main.main>.services>.content>#infos");
         if( leftControl !=null && rightControl !=null && contentContainer !=null ){
             let total = contentContainer.scrollWidth - contentContainer.clientWidth,
-                leftS = 200,
+                leftS = 310,
                 start = contentContainer.clientWidth;
             console.log(total)
             leftControl.addEventListener("click",(e)=>{
                 e.preventDefault()
                 if(leftS >= total){
-                    leftS = total-250
+                    leftS = total-310
                 }
                 contentContainer.scrollTo({
                     top: 0,
@@ -810,15 +810,15 @@
                     leftS = 0
                 }
                 else{
-                    leftS -= 250
+                    leftS -= 320
                 }
 
             })
             rightControl.addEventListener("click",(e)=>{
                 e.preventDefault()
                 console.log(total)
-                if(leftS < 200){
-                    leftS = 200
+                if(leftS < 310){
+                    leftS = 310
                 }
                 contentContainer.scrollTo({
                     top: 0,
@@ -829,7 +829,7 @@
                     leftS = total
                 }
                 else{
-                    leftS += 250
+                    leftS += 310
                 }
 
             })
