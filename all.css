@@ -242,9 +242,10 @@ header.top>.left>.getting-started.getting-started>.icli{
 
 .section-title{
     display: flex;
-    flex-flow: column;
-    /* align-items: center; */
-    gap: 0px;
+    /* flex-flow: column; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
     color: #404040;
 }
 .section-title>.name{
@@ -252,6 +253,37 @@ header.top>.left>.getting-started.getting-started>.icli{
     margin: 0%;
     font-weight: bold;
     color: #404040;
+}
+main.explore .section-title>.name{
+    /* border: 1px solid #808080; */
+    /* max-height: max-content; */
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    gap: 6px;
+    color: #404040;
+}
+main.explore .section-title>.name>h2{
+    font-size: 2rem;
+    margin: 0%;
+}
+main.explore .section-title>.name>.text{
+    display: inline-block;
+    font-size: 0.98rem;
+    color: #808080;
+    font-weight: 500;
+}
+main.explore .section-title>a.link{
+    color: #808080;
+    font-size: 1.05rem;
+    text-decoration: none;
+}
+main.explore .section-title>a.link::first-letter{
+    text-transform: uppercase;
+}
+main.explore .section-title>a.link:hover{
+    color: #08b86f;
+    text-decoration: underline;
 }
 .section-title>.text{
     display: inline-block;
@@ -1266,4 +1298,133 @@ main.main>.side-content>.get-tips>a.start-link>span.plus>i.hor{
     left: 10%;
     /* right: 0%; */
     /* top: 50%; */
+}
+
+
+
+/*Main-Explore*/
+main.explore{
+    /* border: 1px solid #808080; */
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+main.explore>.editors-pick,
+main.explore>.second-topic,
+main.explore>.best-topic,
+main.explore>.most-read{
+    /* border: 1px solid #b60d0d; */
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+}
+main.explore>.editors-pick>.editors-pick-stories,
+main.explore>.second-topic>.second-topic-stories,
+main.explore>.best-topic>.best-topic-stories,
+main.explore>.most-read>.most-read-stories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+main.explore .story{
+    /* border: 1px solid #b60d0d; */
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+main.explore .story>.image-wrapper{
+    /* border: 1px solid #b60d0d; */
+    align-self: center;
+    width: 100%;
+    height: 200px;
+}
+main.explore .story>.image-wrapper>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main.explore .story>.story-info{
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+}
+main.explore .story>.story-info>h2{
+    margin: 0%;
+    padding: 0%;
+    /* font-size: 1.3rem; */
+}
+main.explore .story>.story-info>h2>a{
+    text-decoration: none;
+    color: #404040;
+    font-weight: 600;
+    font-size: 1.18rem;
+    line-height: 1.286;
+    overflow-wrap: anywhere;
+}
+main.explore .story>.story-info>h2>a:hover{
+    text-decoration: underline;
+}
+main.explore .story>.story-info>.user-info{
+    margin: 0%;
+    padding: 0%;
+}
+main.explore .story>.story-info>.user-info>a{
+    text-decoration: none;
+    color: #808080;
+    font-size: 1rem;
+}
+main.explore .story>.story-info>.user-info>a:hover{
+    color: #08b86f;
+}
+main.explore .story>.story-summery{
+    color: #404040;
+    line-height: 1.5;
+    font-size: 1.08rem;
+}
+main.explore .story>.story-footer{
+    /* align-self: flex-end; */
+    justify-self: end;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main.explore .story>.story-footer>.save{
+    /* border: 1px solid #434141; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 4px 15px;
+    color: #808080;
+    background-color: rgba(57, 56, 56, 0.087);
+    text-decoration: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+main.explore .story>.story-footer>.save>i{
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 1.2rem;
+}
+main.explore .story>.story-footer>.save>.text{
+    font-size: 1.08rem;
+}
+main.explore .story>.story-footer>.topic{
+    text-decoration: none;
+    padding: 5px 8px;
+    color: #808080;
+    /* background-color: rgba(57, 56, 56, 0.087); */
+    /* border: 1px solid #80808040; */
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
