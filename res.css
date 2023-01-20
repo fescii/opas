@@ -113,10 +113,13 @@
         flex-flow: column;
         position: relative;
     }
+    main.main>.stories-infinite>.story:last-of-type{
+        border-bottom: none;
+    }
     main.main>.stories-infinite>.story>.profile{
         position: absolute;
         left: 0%;
-        top: -2px;
+        top: -1.8px;
         width: 28px;
         height: 28px;
     }
