@@ -55,7 +55,7 @@ header.top>.logo-container>.logo-name{
     font-size: 1.5rem;
     font-weight: bold;
     /* color: #08b86f; */
-    background: linear-gradient(-20deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ee7752, rgb(255, 136, 0), #08b86f, #23d5ab);
     background-clip: text;
     background-size: 350% 350%;
     -webkit-background-clip: text;
@@ -150,11 +150,13 @@ header.top>.left>.getting-started.getting-started>.icli{
     flex-flow: column;
     gap: 10px;
     color: #404040;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 .welcome-wrapper>.text-content>.tag{
     font-size: 3rem;
     margin: 0%;
-    background: linear-gradient(-20deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ee7752, rgb(255, 136, 0), #08b86f, #23d5ab);
     background-clip: text;
     background-size: 350% 350%;
     -webkit-background-clip: text;
@@ -203,8 +205,8 @@ header.top>.left>.getting-started.getting-started>.icli{
 .welcome-wrapper>.text-content>.start-using>a:first-of-type{
     color: white;
     border: none;
-    /* background: linear-gradient(-15deg, #ee7752, rgb(255, 136, 0), #08b86f, #23d5ab); */
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ee7752, rgb(255, 136, 0), #08b86f, #23d5ab);
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     -webkit-animation: gradient 10s ease infinite;
@@ -498,15 +500,12 @@ main.main>.stories-infinite>.story>.profile>img{
     -o-border-radius: 50px;
 }
 main.main>.stories-infinite>.story>.content{
-    display: grid;
+    display: flex;
+    flex-flow: column;
     padding: 0px 10px 0px 0px;
-    grid-template-columns: 1fr 130px;
-    column-gap: 5px;
-    row-gap: 5px
+    gap: 5px;
 }
 main.main>.stories-infinite>.story>.content>.header{
-    grid-column: 1/2;
-    grid-row: 1/2;
     text-decoration: none;
     display: flex;
     flex-wrap: nowrap;
@@ -523,8 +522,6 @@ main.main>.stories-infinite>.story>.content>.header>.username{
 }
 main.main>.stories-infinite>.story>.content>.summery-wrapper{
     /* border: 1px solid #c02727; */
-    grid-column: 1/2;
-    grid-row: 2/4;
     display: flex;
     flex-flow: column;
     gap: 5px;
@@ -545,24 +542,23 @@ main.main>.stories-infinite>.story>.content>.summery-wrapper>.summery{
     line-height: 1.4;
     font-size: 1.08rem;
 }
-main.main>.stories-infinite>.story>.content>.story-cover{
+main.main>.stories-infinite>.story>.content>.summery-wrapper>.summery>.story-cover{
     /* border: 1px solid #c02727; */
+    float: right;
+    clear: left;
     justify-self: center;
-    grid-column: 2/3;
-    grid-row: 2/4;
-    margin-top: 25px;
-    width: 100px;
-    height: 95%;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 120px;
+    height: 100%;
 }
-main.main>.stories-infinite>.story>.content>.story-cover>img{
+main.main>.stories-infinite>.story>.content>.summery-wrapper>.summery>.story-cover>img{
     width: 100%;
     /* height: 100%; */
     object-fit: cover;
 }
 
 main.main>.stories-infinite>.story>.content>.footer{
-    grid-column: 1/2;
-    grid-row: 4/5;
     /* border: 1px solid #c02727; */
     margin-top: 10px;
     padding-right: 10px;
@@ -705,6 +701,7 @@ footer.footer>section.newsletter>.text{
 footer.footer>section.newsletter>form{
     /* border: 1px solid #808080; */
     padding: 5px;
+    width: 100%;
     position: relative;
 }
 footer.footer>section.newsletter>form>input[type="email"]{
