@@ -17,14 +17,18 @@
     .welcome-wrapper>.text-content{
         width: 100%;
         z-index: 2;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
     }
     .welcome-wrapper>.image{
+        display: none;
         position: absolute;
         height: 200px;
         width: auto;
         right: 20px;
         top: 40px;
     }
+
     main.main{
         /* border: 1px solid #808080; */
         margin: 0%;
