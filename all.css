@@ -1431,7 +1431,7 @@ main.explore .story>.story-footer>.topic{
 
 /*Warning-Modal*/
 .oops-display-modal{
-    position: absolute;
+    position: fixed;
     left: 0%;
     right: 0%;
     top: 0%;
