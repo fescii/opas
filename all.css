@@ -1438,7 +1438,7 @@ main.explore .story>.story-footer>.topic{
     bottom: 0%;
     z-index: 10;
     background-color: #1e1d1de1;
-    display: flex;
+    display: none;
     flex-flow: column;
     align-items: center;
     justify-content: center;
