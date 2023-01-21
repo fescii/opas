@@ -1091,7 +1091,7 @@ main.read-out>.story-content>.article-footer>.author-info>.get-tips>p{
     /* border: 1px solid #c3c3c39b; */
 }
 main.read-out>.story-content>.article-footer>.author-info>.get-tips>a.start-link{
-    margin-top: 10px;
+    margin-top: 17px;
     display: flex;
     font-size: 1.15rem;
     width: max-content;
