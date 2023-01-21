@@ -852,9 +852,7 @@
             serviceOops.forEach(element=>{
                 element.addEventListener("click",(e)=>{
                     e.preventDefault()
-                    if(serviceOopsModal.style.display == "none"){
-                        serviceOopsModal.style.display = "flex"
-                    }
+                    serviceOopsModal.style.display = "flex"
                 })
             })
             let cancel = serviceOopsModal.querySelector("#cancel");
