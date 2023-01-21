@@ -29,7 +29,7 @@ header.top{
     top: 0;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    height: 62px;
+    height: 60px;
     z-index: 5;
     display: flex;
     flex-wrap: nowrap;
@@ -43,8 +43,8 @@ header.top>.logo-container{
     gap: 5px;
 }
 header.top>.logo-container>.logo-wrapper{
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
 }
 header.top>.logo-container>.logo-wrapper>img{
     width: 100%;
@@ -52,7 +52,7 @@ header.top>.logo-container>.logo-wrapper>img{
     object-fit: contain;
 }
 header.top>.logo-container>.logo-name{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     /* color: #08b86f; */
     background: linear-gradient(-45deg, #ee7752, rgb(255, 136, 0), #08b86f, #23d5ab);
