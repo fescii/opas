@@ -157,7 +157,7 @@
                                 <i class="top"></i>
                                 <i class="hor"></i>
                             </span>
-                           <span class="text">Subscribe</span>
+                           <span id="service-oops" class="text">Subscribe</span>
                         </a>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
             </div>
             <form action="" method="post">
                 <input type="email" name="email" id="" placeholder="Enter your email">
-                <input type="submit" value="Subscribe">
+                <input id="service-oops" type="submit" value="Subscribe">
             </form>
             <div class="footer-social-box">
                 <a title="Facebook" rel="noopener" aria-label="Femarin Facebook" href="#" target="_blank"
@@ -381,13 +381,13 @@
             contentContainer = document.querySelector("main.main>.services>.content>#infos");
         if( leftControl !=null && rightControl !=null && contentContainer !=null ){
             let total = contentContainer.scrollWidth - contentContainer.clientWidth,
-                leftS = 200,
+                leftS = 310,
                 start = contentContainer.clientWidth;
             console.log(total)
             leftControl.addEventListener("click",(e)=>{
                 e.preventDefault()
                 if(leftS >= total){
-                    leftS = total-250
+                    leftS = total-310
                 }
                 contentContainer.scrollTo({
                     top: 0,
@@ -398,15 +398,15 @@
                     leftS = 0
                 }
                 else{
-                    leftS -= 250
+                    leftS -= 320
                 }
 
             })
             rightControl.addEventListener("click",(e)=>{
                 e.preventDefault()
                 console.log(total)
-                if(leftS < 200){
-                    leftS = 200
+                if(leftS < 310){
+                    leftS = 310
                 }
                 contentContainer.scrollTo({
                     top: 0,
@@ -417,9 +417,27 @@
                     leftS = total
                 }
                 else{
-                    leftS += 250
+                    leftS += 320
                 }
 
+            })
+        }
+
+        let serviceOops = document.querySelectorAll("#service-oops"),
+        serviceOopsModal = document.querySelector("#service-oops-modal");
+        if(serviceOops !=null && serviceOopsModal !=null){
+            serviceOops.forEach(element=>{
+                element.addEventListener("click",(e)=>{
+                    e.preventDefault()
+                    if(serviceOopsModal.style.display == "none"){
+                        serviceOopsModal.style.display = "flex"
+                    }
+                })
+            })
+            let cancel = serviceOopsModal.querySelector("#cancel");
+            cancel.addEventListener("click",(e)=>{
+                e.preventDefault()
+                serviceOopsModal.style.display = "none"
             })
         }
     </script>

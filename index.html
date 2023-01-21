@@ -49,7 +49,7 @@
             </div>
             <div class="start-using">
                 <a href="" class="start-link">Join Today</a>
-                <a href="" class="start-link">Read Docs</a>
+                <a href="" id="service-oops" class="start-link">Read Docs</a>
             </div>
         </div>
         <div class="image">
@@ -647,7 +647,7 @@
             </div>
             <form action="" method="post">
                 <input type="email" name="email" id="" placeholder="Enter your email">
-                <input type="submit" value="Subscribe">
+                <input id="service-oops" type="submit" value="Subscribe">
             </form>
             <div class="footer-social-box">
                 <a title="Facebook" rel="noopener" aria-label="Femarin Facebook" href="#" target="_blank"
@@ -766,6 +766,17 @@
             </div>
         </div>
     </footer>
+    <div id="service-oops-modal" class="oops-display-modal">
+        <div id="cancel" class="cancel">
+            <span class="right"></span>
+            <span class="left"></span>
+        </div>
+        <div class="modal-content">
+            <span class="iconlyBulk-Danger"><span class="path1"></span><span class="path2"></span></span>
+            <h2 class="text">Oops! that service is not set up yet.</h2>
+            <i class="other-text">This is only a demo version,  we'll release it soon</i>
+        </div>
+    </div>
     <script>
         let socialIcons = document.querySelectorAll("div.w-embed")
         if( socialIcons !=null ){
@@ -832,6 +843,24 @@
                     leftS += 320
                 }
 
+            })
+        }
+
+        let serviceOops = document.querySelectorAll("#service-oops"),
+        serviceOopsModal = document.querySelector("#service-oops-modal");
+        if(serviceOops !=null && serviceOopsModal !=null){
+            serviceOops.forEach(element=>{
+                element.addEventListener("click",(e)=>{
+                    e.preventDefault()
+                    if(serviceOopsModal.style.display == "none"){
+                        serviceOopsModal.style.display = "flex"
+                    }
+                })
+            })
+            let cancel = serviceOopsModal.querySelector("#cancel");
+            cancel.addEventListener("click",(e)=>{
+                e.preventDefault()
+                serviceOopsModal.style.display = "none"
             })
         }
     </script>

@@ -1427,3 +1427,75 @@ main.explore .story>.story-footer>.topic{
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 }
+
+
+/*Warning-Modal*/
+.oops-display-modal{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    z-index: 10;
+    background-color: #1e1d1de1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.oops-display-modal>.modal-content{
+    background-color: #ffffff;
+    border: 1px solid #80808040;
+    padding: 20px 20px;
+    margin: 0px 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.oops-display-modal>.modal-content>span{
+    font-size: 3rem;
+    color: #ee7752;
+}
+.oops-display-modal>.modal-content>h2.text{
+    /* font-size: 2rem; */
+    color: #404040;
+    color: #ee7752;
+    text-align: center;
+    margin: 0%;
+    margin-bottom: 20px;
+}
+.oops-display-modal>.modal-content>i{
+    color: #808080;
+    text-align: center;
+}
+.oops-display-modal>.cancel{
+    /* display: flex; */
+    rotate: 45deg;
+    top: 10%;
+    right: 10%;
+    position: absolute;
+    cursor: pointer;
+}
+.oops-display-modal>.cancel>span{
+    display: inline-block;
+    position: absolute;
+    background-color: #ffffff;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.oops-display-modal>.cancel>span.right{
+    rotate: 90deg;
+}
