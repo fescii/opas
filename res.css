@@ -95,6 +95,11 @@
         top: unset;
         order: 2;
     }
+    main.main-user>.side-content{
+        order: 0;
+        padding-bottom: 20px;
+        /* border-bottom: 1px solid #80808040; */
+    }
     footer.footer{
         padding: 20px;
         grid-template-columns: 1fr 1fr 1fr;
@@ -115,6 +120,16 @@
 @media screen and (max-width:600px ){
     header.top>.left>.header-links{
         display: none;
+    }
+    .author-info-page{
+        /* border: 1px solid #808080; */
+        border-bottom: 1px solid #80808040;
+        padding: 0% 20px 35px 20px;
+        margin-top: 30px;
+        display: flex;
+        flex-flow: column;
+        gap: 30px;
+        align-items: stretch;
     }
     main.main>.stories-infinite>.story{
         /* border: 1px solid #808080; */
@@ -175,6 +190,7 @@
     .welcome-wrapper>.text-content>.tag{
         font-size: 2.5rem;
     }
+    .author-info-page>h2,
     main.main>.services>.section-title>.name{
         font-size: 2.3rem;
     }
