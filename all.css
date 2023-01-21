@@ -261,7 +261,8 @@ main.explore .section-title>.name{
     /* max-height: max-content; */
     display: flex;
     flex-flow: column;
-    /* align-items: center; */
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 6px;
     color: #404040;
 }
@@ -276,6 +277,7 @@ main.explore .section-title>.name>.text{
     font-weight: 500;
 }
 main.explore .section-title>a.link{
+    width: 100px;
     color: #808080;
     font-size: 1.05rem;
     text-decoration: none;

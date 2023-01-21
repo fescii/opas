@@ -257,6 +257,8 @@
         display: flex;
         flex-flow: column;
         gap: 30px;
+        border-bottom: 1px solid #c3c3c39b;
+        padding-bottom: 30px;
     }
     main.explore .story>.image-wrapper{
         /* border: 1px solid #b60d0d; */
