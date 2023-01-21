@@ -98,8 +98,13 @@
     main.main-user>.side-content{
         order: 0;
         padding-bottom: 20px;
+        /* margin-bottom: 0%; */
         /* border-bottom: 1px solid #80808040; */
     }
+    /* main.main-user>.stories-infinite{
+        border-top: 1px solid #80808040;
+        margin-top: 0%;
+    } */
     footer.footer{
         padding: 20px;
         grid-template-columns: 1fr 1fr 1fr;
@@ -123,8 +128,8 @@
     }
     .author-info-page{
         /* border: 1px solid #808080; */
-        border-bottom: 1px solid #80808040;
-        padding: 0% 20px 35px 20px;
+        border-bottom: none;
+        padding: 0% 20px 20px 20px;
         margin-top: 30px;
         display: flex;
         flex-flow: column;
